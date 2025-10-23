@@ -1,0 +1,79 @@
+/* 設定頁面背景 */
+body {
+    background-color: #f5f5f5;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* 主卡片樣式 */
+.card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 300px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* 姓名與職稱樣式 */
+.card h1 {
+    font-size: 24px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.card p {
+    font-size: 16px;
+    color: #777;
+    margin: 5px 0;
+}
+
+/* 頭像樣式 */
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 20px auto;
+}
+
+/* 社群連結樣式 */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-links a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #333;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #4CAF50;
+    transform: translateY(-5px);
+}
+
+/* 微調卡片間距與整體版面 */
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* 針對較小螢幕的響應式設計 */
+@media (max-width: 360px) {
+    .card {
+        width: 90%;
+        padding: 20px;
+    }
+}
